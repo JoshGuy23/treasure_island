@@ -102,8 +102,12 @@ elif path == "r":
                 print("or")
                 print("(B) A spell called 'Wish'")
                 choice_b3 = input().lower()
-            else:
+            elif choice_b2 == "y":
                 print("Your character found some treasure! Congratulations! You may either stop playing, or play again to find the other treasures.")
+            else:
+                print("Your character, bored from the incorrect input, leans against a bookshelf.")
+                print("Your character accidentally topples the bookshelf and many others.")
+                print("The Grim Reaper woke up, and he is not happy. Game Over.")
         else:
             print("Your character gets distracted by an incorrect input and fails the puzzle, opening the trap door beneath them. Game Over.")
 else:
