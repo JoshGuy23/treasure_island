@@ -60,10 +60,19 @@ if path == "l":
                 print("Your character finds themselves in a room full of beasts.")
                 print("Your character triumphs over the beasts and finds two secret passages.")
                 print("Do you go down the left corridor (L) or the right corridor (R)?")
+                choice_a3 = input().lower()
+                if choice_a3 == "l":
+                    print("Your character finds themselves in front of a mysterious door.")
+                    print("Your character enters. Their mind cannot comprehend what lies beyond. Game Over.")
+                elif choice_a3 == "r":
+                    print("Your character finds a treasure chest! After confirming that it's not a mimic, they open the chest for their reward!")
+                    print("Your character found some treasure! Congratulations! You may either stop playing, or play again to find the other treasures.")
             elif choice_a2 == "y":
                 print("Your character found some treasure! Congratulations! You may either stop playing, or play again to find the other treasures.")
+            else:
+                print("Since you entered an incorrect value, your character simply dies of contrivance. Game Over.")
 elif path == "r":
     if character != "b":
-        print("In your way is a puzzle. However, your character failed the puzzle, and fell into a trap door. Game Over")
+        print("In your character's way is a puzzle. However, your character failed the puzzle, and fell into a trap door. Game Over")
 else:
     print("Your character sits down, indecisive, and falls into an eternal sleep. Game Over. (You must enter 'L' or 'R')")
