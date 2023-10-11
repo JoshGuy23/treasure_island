@@ -102,6 +102,13 @@ elif path == "r":
                 print("or")
                 print("(B) A spell called 'Wish'")
                 choice_b3 = input().lower()
+                if choice_b3 == "a":
+                    print("You summon a philospher's stone, which you use to change the mercury into gold.")
+                    print("Your character found some treasure! Congratulations! You may either stop playing, or play again to find the other treasures.")
+                elif choice_b3 == "b":
+                    print("You cast Wish, and wish for a treasure chest. One appears - several feet above your head, and crashes down. Game Over.")
+                else:
+                    print("While messing around, you accidentally summon a dark monster. A dark, hungry monster. Game Over.")
             elif choice_b2 == "y":
                 print("Your character found some treasure! Congratulations! You may either stop playing, or play again to find the other treasures.")
             else:
