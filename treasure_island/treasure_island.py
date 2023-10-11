@@ -28,3 +28,22 @@ A. Athletic
 or
 B. Intelligent?''')
 character = input()
+
+if character == "A":
+    print("Your character is Athletic.")
+elif character == "B":
+    print("Your character is Intelligent.")
+else:
+    print("Your character is Normal.")
+
+print("The path splits in two. Do you go left (L) or right (R)?")
+path = input()
+
+if path == "L":
+    if character != "A":
+        print("Your character fell into a hole. Game Over.")
+elif path == "R":
+    if character != "B":
+        print("In your way is a puzzle. However, your character failed the puzzle, and fell into a trap door. Game Over")
+else:
+    print("Your character sits down, indecisive, and falls into an eternal sleep. Game Over. (You must enter 'L' or 'R')")
