@@ -37,7 +37,7 @@ else:
     print("Your character is Normal.")
 
 print("The path splits in two. Do you go left (L) or right (R)?")
-path = input().lower
+path = input().lower()
 
 if path == "l":
     if character != "a":
