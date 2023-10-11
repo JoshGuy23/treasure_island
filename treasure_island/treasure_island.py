@@ -27,23 +27,33 @@ print('''Are you:
 A. Athletic
 or
 B. Intelligent?''')
-character = input()
+character = input().lower()
 
-if character == "A":
+if character == "a":
     print("Your character is Athletic.")
-elif character == "B":
+elif character == "b":
     print("Your character is Intelligent.")
 else:
     print("Your character is Normal.")
 
 print("The path splits in two. Do you go left (L) or right (R)?")
-path = input()
+path = input().lower
 
-if path == "L":
-    if character != "A":
+if path == "l":
+    if character != "a":
         print("Your character fell into a hole. Game Over.")
-elif path == "R":
-    if character != "B":
+    else:
+        print("Your character gracefully leaps over the hole.")
+        print("Your character comes across a lake. If you want to swim, enter 1. If you want to wait for a boat, enter any other number.")
+        choice_a1 = int(input())
+        if choice_a1 != 1:
+            print("The boat arrives, only for your character to come face-to-face with the Grim Reaper. Game Over.")
+        else:
+            print("Your character swims to the other side of the lake.")
+            print("Your character finds themselves in front of three doors.")
+            print("There is a red door (R), a blue door (B), and a yellow door (Y).")
+elif path == "r":
+    if character != "b":
         print("In your way is a puzzle. However, your character failed the puzzle, and fell into a trap door. Game Over")
 else:
     print("Your character sits down, indecisive, and falls into an eternal sleep. Game Over. (You must enter 'L' or 'R')")
