@@ -85,6 +85,25 @@ elif path == "r":
             print("The door opens - and out comes the Grim Reaper, annoyed that his nap was interrupted. Game Over.")
         elif choice_b1 == "b":
             print("Your character solves the puzzle and enters the library - quietly, of course.")
+            print("Your character finds themselves in a large, voluminous library.")
+            print("To your right is the Grim Reaper, napping on a rocking chair. Not that you needed extra incentive to be quiet in a library.")
+            print("You come across a hallway, and find three doors.")
+            print("There is a red door (R), a blue door (B), and a yellow door (Y).")
+            print("Which door do you go through?")
+            choice_b2 = input().lower()
+            if choice_b2 == "r":
+                print("Out from the red door comes a blast of fire.")
+                print("You are burnt to a crisp, and the library is set aflame. The Grim Reaper is not happy. Game Over.")
+            elif choice_b2 == "b":
+                print("In the room lies a pedestal holding a mysterious, weathered tome.")
+                print("On the floor is a flask filled with mercury.")
+                print("Upon reading the tome, you come across two spells that seem useful. But you only have enough energy to case one.")
+                print("(A) A spell to summon a 'Philosopher's Stone'")
+                print("or")
+                print("(B) A spell called 'Wish'")
+                choice_b3 = input().lower()
+            else:
+                print("Your character found some treasure! Congratulations! You may either stop playing, or play again to find the other treasures.")
         else:
             print("Your character gets distracted by an incorrect input and fails the puzzle, opening the trap door beneath them. Game Over.")
 else:
