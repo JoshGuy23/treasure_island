@@ -52,6 +52,16 @@ if path == "l":
             print("Your character swims to the other side of the lake.")
             print("Your character finds themselves in front of three doors.")
             print("There is a red door (R), a blue door (B), and a yellow door (Y).")
+            print("Which door do you go through?")
+            choice_a2 = input().lower()
+            if choice_a2 == "r":
+                print("Your character finds themselves in a room of fire. Game Over.")
+            elif choice_a2 == "b":
+                print("Your character finds themselves in a room full of beasts.")
+                print("Your character triumphs over the beasts and finds two secret passages.")
+                print("Do you go down the left corridor (L) or the right corridor (R)?")
+            elif choice_a2 == "y":
+                print("Your character found some treasure! Congratulations! You may either stop playing, or play again to find the other treasures.")
 elif path == "r":
     if character != "b":
         print("In your way is a puzzle. However, your character failed the puzzle, and fell into a trap door. Game Over")
